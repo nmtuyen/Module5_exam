@@ -1,6 +1,9 @@
 <h3>List Country</h3>
-<a routerLink='/books/create'>Add country</a>
 <table>
+  <tr>
+    <td>Có {{bookList.length}} cuốn sách</td>
+    <td><a routerLink='/books/create'>Add book</a></td>
+  </tr>
   <tr>
 <!--    <td>ID</td>-->
     <td>Title</td>
@@ -13,6 +16,7 @@
     <td>{{book.title}}</td>
     <td>{{book.author}}</td>
     <td><a [routerLink]="['/books/edit',book.id]">edit</a></td>
-<!--    <td><a>delete</a></td>-->
+    <td><a [routerLink]="['/books/delete',book.id]">Delete</a></td>
+
   </tr>
 </table>

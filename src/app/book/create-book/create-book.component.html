@@ -1,6 +1,18 @@
 <form [formGroup]="bookForm" (ngSubmit)="onSubmit()">
-<input type="text" formControlName="title">
-<input type="text" formControlName="author">
-<input type="text" formControlName="description">
-<button>Add</button>
+  <table>
+    <tr>
+      <td>Title</td>
+      <td><input type="text" formControlName="title"></td>
+    </tr>
+    <tr>
+      <td>Author</td>
+      <td><input type="text" formControlName="author"></td>
+    </tr>
+    <tr>
+      <td>Description</td>
+<!--      <td><input type="text" formControlName="description"></td>-->
+      <td><textarea name="" id="" cols="30" rows="10" formControlName="description"></textarea></td>
+    </tr>
+  </table>
+  <button>Add</button>
 </form>
