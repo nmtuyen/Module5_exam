@@ -1,5 +1,5 @@
 <form [formGroup]="book" (ngSubmit)="onSubmit(id)">
-  <table>
+  <table class="table table-striped">
 <!--    <tr>-->
 <!--      <td>Id</td>-->
 <!--      <td><input type="text" formControlName="id" style="display: none"></td>-->
@@ -17,7 +17,7 @@
       <td><textarea name="" id="" cols="30" rows="10" type="text" formControlName="description"></textarea></td>
     </tr>
     <tr>
-      <td><button>Update</button></td>
+      <td><button class="btn btn-danger">Update</button></td>
       <td><a routerLink="/books/list">Thoát</a></td>
     </tr>
   </table>

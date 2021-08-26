@@ -1,5 +1,6 @@
+<div class="container">
 <h3>List Country</h3>
-<table>
+<table class="table table-striped">
   <tr>
     <td>Có {{bookList.length}} cuốn sách</td>
     <td><a routerLink='/books/create'>Add book</a></td>
@@ -13,10 +14,10 @@
   </tr>
   <tr *ngFor="let book of bookList">
 <!--    <td>{{book.id}}</td>-->
-    <td>{{book.title}}</td>
+    <td><a [routerLink]="['/books/view',book.id]">{{book.title}}</a></td>
     <td>{{book.author}}</td>
     <td><a [routerLink]="['/books/edit',book.id]">edit</a></td>
     <td><a [routerLink]="['/books/delete',book.id]">Delete</a></td>
-
   </tr>
 </table>
+</div>

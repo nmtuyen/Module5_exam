@@ -1,4 +1,4 @@
-<form [formGroup]="book" (ngSubmit)="onSubmit(id)">
+<form [formGroup]="book">
   <table class="table table-striped">
     <!--    <tr>-->
     <!--      <td>Id</td>-->
@@ -17,7 +17,6 @@
       <td>{{book.value.description}}</td>
     </tr>
     <tr>
-      <td><button>Delete</button></td>
       <td><a routerLink="/books/list">Thoát</a></td>
     </tr>
   </table>

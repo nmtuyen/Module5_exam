@@ -5,6 +5,7 @@ import { ListBookComponent} from './book/list-book/list-book.component';
 import { CreateBookComponent} from './book/create-book/create-book.component';
 import {EditBookComponent} from './book/edit-book/edit-book.component';
 import {DeleteBookComponent} from './book/delete-book/delete-book.component';
+import {ViewBookComponent} from './book/view-book/view-book.component';
 
 
 const routes: Routes = [
@@ -24,6 +25,10 @@ const routes: Routes = [
     path: 'books/delete/:id',
     component: DeleteBookComponent
   },
+  {
+    path: 'books/view/:id',
+    component: ViewBookComponent
+  }
 ];
 
 @NgModule({

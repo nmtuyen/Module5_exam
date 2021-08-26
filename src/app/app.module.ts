@@ -10,6 +10,7 @@ import {ReactiveFormsModule} from '@angular/forms';
 import { CreateBookComponent } from './book/create-book/create-book.component';
 import { EditBookComponent } from './book/edit-book/edit-book.component';
 import { DeleteBookComponent } from './book/delete-book/delete-book.component';
+import { ViewBookComponent } from './book/view-book/view-book.component';
 
 
 @NgModule({
@@ -20,6 +21,7 @@ import { DeleteBookComponent } from './book/delete-book/delete-book.component';
     CreateBookComponent,
      EditBookComponent,
      DeleteBookComponent,
+     ViewBookComponent,
 
   ],
   imports: [
